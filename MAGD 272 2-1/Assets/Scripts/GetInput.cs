@@ -9,6 +9,9 @@ public class GetInput : MonoBehaviour
     private float horVal;
     private float verVal;
 
+
+    public bool facingRight;
+
     [SerializeField]
     private float speed;
 
@@ -28,11 +31,22 @@ public class GetInput : MonoBehaviour
         {
             speed = 3.5f;
         }
+        flip();
     }
 
     void FixedUpdate()
     {
        // rb.AddForce(new Vector2 (horVal * speed, verVal * speed));
        rb.velocity = new Vector2 (horVal * speed, verVal * speed);
+    }
+
+    void flip()
+    {
+
+        if ((horVal > 0 && facingRight) || (horVal < 0 && !facingRight))
+        {
+            facingRight = !facingRight;
+            transform.Rotate(0, 180, 0);
+        }
     }
 }
