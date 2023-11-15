@@ -20,7 +20,7 @@ public class PlayerInputController : MonoBehaviour
         }
 
         if (jumpMotor != null) {
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Input.GetKeyDown(KeyCode.X)) {
                 jumpMotor.Jump();
             }
         }
