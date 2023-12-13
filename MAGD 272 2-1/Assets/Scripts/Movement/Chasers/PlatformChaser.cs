@@ -64,6 +64,11 @@ public class PlatformChaser : MonoBehaviour
             if (jumpMotor != null) {
                 if (jumpMotor.CheckEdge() || jumpMotor.CheckWall()) {
                     jumpMotor.Jump();
+                    print("Trying to Jump");
+                }
+                if (target.transform.position.x > transform.position.x)
+                {
+                    jumpMotor.Jump();
                 }
             }
         }

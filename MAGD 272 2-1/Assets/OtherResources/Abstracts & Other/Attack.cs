@@ -45,7 +45,7 @@ public abstract class Attack : MonoBehaviour, IAttack<Health>
 
     virtual public void SetDirection(Vector2 direction)
     {
-        if(direction != Vector2.zero) directionFacing = direction;
+        if (direction != Vector2.zero) directionFacing = direction;
     }
 
     protected bool ShootRaycast(Vector2 direction, float range, LayerMask attackLayer)

@@ -5225,7 +5225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee75fdf325f7b3143b0fc675b9d6555a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 719111449}
+  target: {fileID: 1150277342}
   smoothingTimePercentage: 0.08
   constrainX: 0
   constraintY: 0
